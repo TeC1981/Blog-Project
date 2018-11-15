@@ -131,4 +131,5 @@
 
 @media only screen and (max-width: 480px)
 .post-body a > img {
+  width: initial !important;
 }
