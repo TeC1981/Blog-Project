@@ -83,8 +83,6 @@ function showPagePosts(json) {
 			// Get the post thumbnails
 			postimg = ("media$thumbnail" in entry) ? entry.media$thumbnail.url : imgBlank;
  
-           postimg = ((a != -1) && (b != -1) && (c != -1) && (d != "")) ? d : imgBlank;
-
 			// Build the post template
 			output += '<div class="itemposts">';			
 			output += '<div class="iteminside"><a href="' + posturl + '"><img src="' + postimg + '" /></a>';
