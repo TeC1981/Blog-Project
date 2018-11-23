@@ -88,7 +88,7 @@ function showPagePosts(json) {
 			output += '<div class="iteminside"><a href="' + posturl + '"><img src="' + postimg + '" /></a>';
 			output += '<h6><a href="' + posturl + '" title="' + posttitle + '">' + posttitle + '</a></h6>';
 			output += '<span class="summary">' + postsumm + '</span></div>';
-			output += '<div style="clear:both;"></div><div class="itemfoot">' + timepub + replies + '<a class="itemrmore" href="' + posturl + '">' + rmoreText + '</a></div>';
+			output += '<div style="clear:both;"></div>';
 			output += '</div>';
 
 		}
