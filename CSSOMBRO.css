@@ -29,8 +29,8 @@
 }
 
 .itemposts h6 {
-    font: normal bold 24px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-    text-transform: capitalize;
+    font: normal bold 16px/1.2 Arial,Sans-Serif;
+    text-transform: uppercase;
     color: #2c3031;
     padding: 15px;
     margin: 0px auto 2px;
@@ -45,7 +45,7 @@
   float:left;
   height:150px;
   width:150px !important;
-  margin:10px 20px 10px 10px;
+  margin:10px 20px 20px 10px;
 }
 
 .itemposts .iteminside {
@@ -112,6 +112,6 @@
 span.summary {
     line-height: 1.6em;
     text-align: justify;
-    font-size: 16px;
+    font-size: 11px;
 }
 
