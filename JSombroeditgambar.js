@@ -81,11 +81,7 @@ function showPagePosts(json) {
 			replies = (showComments) ? commentsnum + ' ' + commentsLabel : '';
 
 			// Get the post thumbnails
-           		s = entry.content.$t;
-           		a = s.indexOf("<img");
-          		b = s.indexOf("src=\"", a);
-           		c = s.indexOf("\"", b + 5);
-           		d = s.substr(b + 5, c - b - 5);
+			postimg = ("media$thumbnail" in entry) ? entry.media$thumbnail.url : imgBlank;
  
            postimg = ((a != -1) && (b != -1) && (c != -1) && (d != "")) ? d : imgBlank;
 
