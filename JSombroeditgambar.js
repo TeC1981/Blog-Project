@@ -81,7 +81,7 @@ function showPagePosts(json) {
 			replies = (showComments) ? commentsnum + ' ' + commentsLabel : '';
 
 			// Get the post thumbnails
-			postimg = ("imageUrl" in entry) ? entry.media$thumbnail.url : imgBlank;
+			postimg = ("media$thumbnail" in entry) ? entry.media$thumbnail.url : imgBlank;
 
 			// Build the post template
 			output += '<div class="itemposts">';			
