@@ -24,7 +24,7 @@ var _totalposts = document.getElementById('totalposts');
 
 function showPagePosts(json) {
 
-    var entry, posttitle, posturl, postimg, s, a, b, c, d, postsumm, replies, monthnames, timepub, output = "";
+    var entry, posttitle, posturl, postimg, postsumm, replies, monthnames, timepub, output = "";
 
     if (pagernum === 0) {
         postsnum = parseInt(json.feed.openSearch$totalResults.$t);
@@ -81,13 +81,8 @@ function showPagePosts(json) {
 			replies = (showComments) ? commentsnum + ' ' + commentsLabel : '';
 
 			// Get the post thumbnails
-           s = entry.content.$t;
-           a = s.indexOf("<img");
-           b = s.indexOf("src=\"", a);
-           c = s.indexOf("\"", b + 5);
-           d = s.substr(b + 5, c - b - 5);
- 
-           postimg = ((a != -1) && (b != -1) && (c != -1) && (d != "")) ? d : imgBlank;
+			postimg = ("media$thumbnail" in entry) ? entry.media$thumbnail.url : imgBlank;
+
  
 			// Build the post template
 			output += '<div class="itemposts">';			
