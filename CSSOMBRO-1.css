@@ -88,7 +88,6 @@
 
 #pagination span, #pagination a {
   border:1px solid #e5e5e5;
-  color:white;
   display:inline;
   margin:0 1px;
   padding:7px 10px;
@@ -100,6 +99,7 @@
 #pagination span.actual,
 #pagination a:hover {
   background-color:#7483BC;
+  color:#ffffff;
 }
 
 #pagination span.hidden {
